@@ -120,4 +120,4 @@ const inProgressAlert = () => {
     alert('Данный раздел находится в разработке. Не трогайте его, он боится людей')
 }
 
-window.location.pathname.split('/').pop() == 'html/gallery.html' ? displayImages() : displayMainButtons()
+window.location.pathname.split('/').pop() == 'gallery.html' ? displayImages() : displayMainButtons()
