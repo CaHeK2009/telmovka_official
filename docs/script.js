@@ -1,11 +1,11 @@
 let isMenuOpen = false
 const mainButtons = [{
         name: 'Галерея',
-        image: "./images/настоящая-рыбалка.jpg",
-        path: './html/gallery.html'
+        image: "images/настоящая-рыбалка.jpg",
+        path: 'html/gallery.html'
     }, {
         name: 'Карточка персонажа',
-        image: "./images/тельмы.jpg",
+        image: "images/тельмы.jpg",
         path: "inProgressAlert()"
 }]
 const images = [{
@@ -106,7 +106,7 @@ const displayImages = () => {
     images.forEach(image => {
         galleryBlock.innerHTML += `
             <div class="gallery-element">
-                <img src="./images/${image.path}.jpg" class="gallery-image"/>
+                <img src="../images/${image.path}.jpg" class="gallery-image"/>
                 <span class="gallery-text">Это ${image.name}</span>
             </div>
     `})
