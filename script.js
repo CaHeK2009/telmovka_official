@@ -1,11 +1,11 @@
 let isMenuOpen = false
 const mainButtons = [{
         name: 'Галерея',
-        image: "./images/настоящая-рыбалка.jpg",
-        path: './gallery.html'
+        image: "../images/настоящая-рыбалка.jpg",
+        path: '../gallery.html'
     }, {
         name: 'Карточка персонажа',
-        image: "./images/тельмы.jpg",
+        image: "../images/тельмы.jpg",
         path: "inProgressAlert()"
 }]
 const images = [{
