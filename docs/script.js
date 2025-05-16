@@ -85,10 +85,11 @@ const images = [{
 const onHeaderMenuButtonClick = () => {
     isMenuOpen = !isMenuOpen
     const menu = document.querySelector('.context-menu')
+
     menu.innerHTML = isMenuOpen ? `
         <a class="menu-text" onClick="inProgressAlert()">Главная</a>
-        <a class="menu-text" onClick="inProgressAlert()">Что нового?</a>
-        <a class="menu-text" onClick="inProgressAlert()">Разработка</a>
+        <a class="menu-text" href="${window.location.pathname.includes('/html/') ? '' : 'html/'}what-is-new.html">Что нового?</a>
+        <a class="menu-text" href="https://github.com/CaHeK2009/telmovka_official" target="_blank">Разработка</a>
         <a class="menu-text" onClick="inProgressAlert()">О разработчике</a>
     ` : ``
 }
@@ -112,6 +113,8 @@ const displayImages = () => {
     `})
     galleryBlock.innerHTML += `
         <p class="description">На этом фоточки заканчиваются, но мы не унываем и надеемся что разраб будет обновлять галерею)</p>
+        <p class="description">BTW вы можете добавить себе тг стикерпак со всеми фоточками</p>
+        <a class="gradient-stickerpack-button" href="https://t.me/addstickers/StikerochkiSAleksandroj" target="_blank">Добавить стикерпак</a>
     `
 
 }
